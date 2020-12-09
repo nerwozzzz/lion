@@ -30,7 +30,7 @@ p {
 .main-page-wrapper{
     background: url("./imgg/lion-header1.jpg") center top no-repeat, url("./imgg/bottom-pic1.jpg")  right bottom no-repeat;
 }
-.container {
+.conteiner {
     margin: 0 auto;
     width: 1150px;
 }
@@ -314,7 +314,7 @@ background: #353538;
 .about__desc-text p:last-child {
     margin-bottom: 0;
 }
-.footer-container__content
+.footer-conteiner__content
 {
     border-top: 1px solid#353538;
 }
@@ -347,24 +347,29 @@ background: #353538;
 }
 .socials__item--icon--telegram .socials__link{
     background-image: url(./img/telegram.jpg);
+    border-radius: 50%;
+
 }
 .socials__item--icon--telegram .socials__link:hover{
     background-image: url(./img/telegram-hover.jpg);
 }
 .socials__item--icon--vk .socials__link{
     background-image: url(./img/vk.jpg);
+    border-radius: 50%;
 }
 .socials__item--icon--vk .socials__link:hover{
     background-image: url(./img/vk-hover.jpg);
 }
 .socials__item--icon--fb .socials__link{
     background-image: url(./img/f.jpg);
+    border-radius: 50%;
 }
 .socials__item--icon--fb .socials__link:hover{
     background-image: url(./img/f-hover.jpg);
 }
 .socials__item--icon--insta .socials__link{
     background-image: url(./img/in.jpg);
+    border-radius: 50%;
 }
 .socials__item--icon--insta .socials__link:hover{
     background-image: url(./img/in-hover.jpg);
