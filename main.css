@@ -68,6 +68,7 @@ button{
 .header__col{
   display: flex;
   align-items: center;  
+ 
 }
 .header__col--align--right{
     justify-content: flex-end;
@@ -113,8 +114,10 @@ button{
     text-decoration: underline;
     color: #dfb56d;
 }
+
 .hero__text-section{
     width: 38%;   
+    margin-left: 0;
 }
 .hero__title{
     font-size: 48px;
@@ -135,6 +138,7 @@ color: #fff;
 font-weight: bold;
 text-transform: uppercase;
 text-decoration: none;
+display: inline-block;
 }
 .btn--color--ginger:hover{
     background: #dfb56d;
@@ -167,7 +171,7 @@ text-decoration: none;
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 45px;
-    margin-top: 202px;
+    margin-top: 110px;
 }
 .offers__item {
     min-height: 470px;
@@ -253,7 +257,12 @@ width: 50%;
     display: flex;
     justify-content: center;
 }
-
+.section__title--title{
+    margin-top: -40px;
+    margin-bottom: 52px;
+    font-size: 36px;
+    font-weight: bold;
+}
 .news__item {
     width: 555px;
     min-height: 392px;
@@ -336,8 +345,9 @@ background: #353538;
 }
 .about{
     display: flex;
+    margin-bottom: -100px;
 }
-.about:before,
+
 .about__desc{
     border-radius: 4px;
 }
@@ -345,6 +355,7 @@ background: #353538;
 .about:before{
     content: "";
     display: block;
+    
     width: 488px;
     height: 502px;
     background: url("./img/chess.jpg") center center/cover no-repeat;
@@ -602,6 +613,12 @@ font-size: 14px;
     display: flex;
     flex-wrap: wrap;
 }
+.socials-img{
+    margin-left: 36px;
+}
+.socials-img:nth-child(4n + 1){
+    margin-left: 0;
+}
 .content{
     display: flex;
     background: #fff;
@@ -643,6 +660,7 @@ font-size: 14px;
     font-weight: bold;
     color: #4d76a1;
     margin-bottom: 11px;
+    margin-left: 22px;
 }
 .review--user--black{
     display: flex;
@@ -659,19 +677,28 @@ font-size: 14px;
     height: 29px;
     margin-left: 7px;
 }
+.review__tags-item-right{
+    margin-left: 10px;
+}
 .review__tags{
+    margin-top: -13px;
     display: flex;
     align-items: flex-start;
+    padding: 10px;
+    
 }
 .tag{
     font-size: 13px;
     color: #333;
     padding: 8px 16px;
     border-radius: 50px;
+    margin-left: 12px;
     background: #e6e6e6;
 }
+
 .tag--bg--green{
     background: #c7e9d0;
+   
 }
 .review__title{
     font-size: 30px;
@@ -707,161 +734,56 @@ font-size: 14px;
     line-height: 1.1;
     margin-right: 150px;
 }
-/*
-.canciuses{
-    display: inline-flex;
-  border-radius: 5px; 
 
-
-}
-
-.canciuses__item{
-    background: #F4F5F5;
-    border-radius: 4px;
-    width: 557px;
-    min-height: 542px;
-    color: #010001;
-    align-items: stretch;  
-    margin-top: 98px; 
-}
-.canciuses__item--ecaterina{
-    width: 557px;
-    min-height: 691px;
-    margin-bottom: -77px;
-    margin-left: 26px;
-
-}
-.canciuses__item--anton{
-    position: relative;
-    height: 583px;
-    margin-top: 97px;
-    margin-bottom: 51px;
-    margin-left: 26px;
-    
-}
-.canciuses__item--lisa{
-    position: relative;
-    top: -147px;
-}
-
-.all__png{
-    position: relative;
-    width: 142px;
-    height: 142px;
-    top: 50px;
-    left: 28px;
-}
-.canciuses__content{
-    display: inline;
-    position: relative;
-   top: -50px;
-   left: 200px;
-    
-    padding-left: 150px;
-    
-}
-.canciuses__title--blue{
-    color: #2E77A4;
-}
-
-.canciuses__title{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-weight: bold;
-
-}
-.vk__img{
-    position: relative;
-   top: -25px;
-   left: 157px;
-}
-.canciuses__btn-wrapper{
-    position: relative;
-    top: -55px;
-    left: 190px;
-}
-.c{
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    padding-left: 31px;
-}
-.canciuses__text-desc{
-    color: #818181;
-    font-size: 16px;
-    padding-left: 31px;
-    padding-right: 31px;
-    padding-top: 13px;
-}
-.canciuses__text-bottom{
-    color: black;
-    font-size: 14px;
-    font-weight: bold;
-    padding-left: 31px;
-    padding-top: 48px;
-}
-
-.btn--color--blue{
-    background:  #B9EAE4;
-    color: black;
-    font-size: 13px;
-    width: 141px;
-    height: 20px; 
-    border-radius: 35px;
-}
-
-
-
-
-.canciuses-content{
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, #E5C288, #E5C288);
-}
-    
-
-.canciuses__textbot{
-    width: 481px;
-height: 195px;
-    color: black;
-    font-size: 48px;
-    font-weight: bold;
-    position: relative;
-    margin-top: 84px;
-
-}
-.canciuses__phone--img{
-    display: flex;
-    justify-content: flex-end;
-    width: 429px;
-    height: 320px;
-    margin-left: 699px;
-    margin-top: -210px;
-}
-*/
 .dropdown:hover{
-        position: relative;   
+  
     }
 .dropdown:hover .dropdown__menu{
+    opacity: 1;
+    right: 0;
+    left: initial;
+}
+.contacts__dropdown-title{
+    margin-left: 90px;
+}
+.dropdown__list{
+    
+}
+.triangle-up{
+    position: absolute;
     display: flex;
+    justify-content: flex-end;
+   
+    margin-top: -19px;
+    margin-left: 80px;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #EDEDED;
 }
 .dropdown__menu{
+   
     position: absolute;
     display: flex;
     justify-content: center;
     background:#EDEDED;
     border: 1px solid black;
     padding: 10px;
-   
+    left: -9999px;
+    opacity: 0;
     width: 160px;
     height: 80px;
     top: 100%;
+    margin-top: 10px;
     border-radius: 5px;    
 }
+
 .dropdown{
     display: flex;
     justify-content: center;
+    position: relative;
+    
    
 }
 
